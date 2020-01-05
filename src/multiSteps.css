@@ -1,0 +1,34 @@
+.disable-button{
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.multi-step-nav{
+  display: flex;
+  flex-direction: row;
+}
+
+.multi-step-nav button{
+  margin-right: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 3px 10px;
+  font-size: 0.85rem;
+}
+
+.multi-step-nav button:last-of-type{
+  margin-left: 25px;
+  border: 1px solid #e0e0e0;
+}
+
+.multi-step-body{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    margin: 25px 0px 10px 0px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.multi-step-counter{
+  font-size: 0.8rem;
+}
