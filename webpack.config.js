@@ -2,10 +2,10 @@ var path = require('path');
 
 module.exports = {
     mode: 'production',
-    entry: './src/MultiStepFormComponent.jsx',
+    entry: './src/MyComponent.jsx',
     output: {
-        path: path.resolve('lib'),
-        filename: 'MultiStepFormComponent.js',
+        path: path.resolve('build'),
+        filename: 'MyComponent.js',
         libraryTarget: 'commonjs2'
     },
     module: {

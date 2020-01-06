@@ -1,12 +1,12 @@
 {
-    "name": "multi-step-form-ui",
-    "version": "1.0.4",
-    "description": "Different components are used as a step inside this component",
-    "main": "./lib/MultiStepFormComponent.js",
+    "name": "your-component-name",
+    "version": "1.0.0",
+    "description": "<secription>",
+    "main": "./build/MyComponent.js",
     "keywords": [
-        "multistepform"
+        "sample"
     ],
-    "author": "sachie026",
+    "author": "<author>",
     "license": "ISC",
     "scripts": {
         "build": "webpack"

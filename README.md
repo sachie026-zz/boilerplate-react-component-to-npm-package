@@ -1,46 +1,23 @@
-# react-multi-step-form-component
+# boilerplate-react-component-to-npm-package
 
-A NPM package which lets user add their personal components as a step
+### Installation
 
+Clone or download the repo. 
+Update file and folder names to your desired names 
 
-### Installation:
+### Build your React Component
+Run `npm install` from the command line inside your project folder, this installs all of the package dependencies for the project.
 
-```JavaScript
-npm install multi-step-form-ui 
-or 
-yarn add multi-step-form-ui
-```
-
-### Usage:
-
-```JavaScript
-import MultiSteps from "multi-step-form-ui";
-```
-
-```JavaScript
- <MultiSteps>
-    <Component1 />
-    <Component2 />
-    <Component3/>
-</MultiSteps>
-```
+Run `npm run build or yarn run build` from the command line inside your project folder, this will run webpack via the "scripts > build" script in the package.json file above, when it's finished you should see the compiled ES5 version of your React component in the lib folder inside your project folder.
 
 
-You can pass your submit callback function in following way:
-
-```JavaScript
- <MultiSteps submitForm = {`<your_submit_callback>`}>
-    <Component1 />
-    <Component2 />
-    <Component3/>
-</MultiSteps>
-```
-
-To mark the step as completd you have to call completed function in following way inside each component:
-
-- To set step as incomplete `this.props.completed(this.props.stepindex, false)`
-- To set step as complete `this.props.completed(this.props.stepindex, true)`
-
-Here `this.props.stepindex` is mandatory paramater
+### Login to the npm registry with the npm cli
+Run `npm login` from the command line and enter the credentials that you used to sign up to npmjs.com.
 
 
+### Publish your React component to npm!
+Run `npm publish` from the command line inside your project folder.
+
+Now go and check out your new React component on the npm website at https://www.npmjs.com/package/[YOUR PACKAGE NAME]. You can also run npm info [YOUR PACKAGE NAME] from the command line to see all the metadata info about your package that's stored on the npm registry.
+
+NOTE: To update your package in npm you just need to increment the version number in the package.json file. Then run `npm run build or yarn run build` followed by `npm publish` again.
